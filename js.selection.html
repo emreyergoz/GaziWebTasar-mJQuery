@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id= "onemli">Lorem, ipsum dolor.</p>
+    <p>Accusamus, nesciunt dolore?</p>
+    <p>Fugit, nemo sunt!</p>
+    <script>
+        //tüm paragrafları getir
+        var dizi = document.querySelectorAll("p");
+
+        for (var i = 0; i < dizi.length; i++)
+        dizi[i].style.backgroundColor = "yellow";
+        //jquery karşılığı: $("p").css(background-color", "yellow");
+
+        var parag = document.getElementById("onemli");
+        parag.style.fontWeight = "bold";
+        //$("onemli").css("font-weight", "bold");
+    </script>
+</body>
+</html>
